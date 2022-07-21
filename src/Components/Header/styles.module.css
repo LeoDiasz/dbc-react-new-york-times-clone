@@ -1,0 +1,8 @@
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerTop>nav>ul {
+    display: flex;
+}
