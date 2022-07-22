@@ -2,6 +2,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Footer } from './components/Footer/Footer';
 import {Header} from "./components/Header/Header"
+import { Health } from './pages/Health/Health';
+import { Home } from './pages/Home/Home';
+import { Science } from './pages/Science/Science';
+import { Technology } from './pages/Technology/Technology';
+import { World } from './pages/World/World';
 
 function App() {
   return (
@@ -9,11 +14,11 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path='/'>Home</Route>
-          <Route path='/health'>Health</Route>
-          <Route path='/science'>Science</Route>
-          <Route path='/technology'>Technology</Route>
-          <Route path='/world'>World</Route>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/health' element={<Health/>}></Route>
+          <Route path='/science' element={<Science/>}></Route>
+          <Route path='/technology' element={<Technology/>}></Route>
+          <Route path='/world' element={<World/>}></Route>
         </Routes>
         <Footer/>
       </BrowserRouter>
