@@ -1,0 +1,14 @@
+.mainContentDiv {
+    width: 830px;
+    padding-right: 17px;
+    border-top: 1px solid black;
+    border-right: 1px solid var(--color-stroke-tertiary, #C7C7C7);
+
+}
+
+.mainContentDiv::after {
+    content: '';
+    height: 14px;
+    width: 1px;
+    background-color: black;
+}
