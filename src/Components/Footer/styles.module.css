@@ -1,0 +1,46 @@
+.footerContent {
+  padding: 10px 0;
+  border-top: 4px double rgb(226, 226, 226);
+}
+
+.navTopicsFooterContent {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  padding: 14px 0px;
+
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.divGridListContent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.navTopicsFooterContent > div:last-child {
+  padding-left: 20px;
+  border-left: 1px solid rgb(226, 226, 226);
+}
+
+.footerSubscribe > div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.footerSubscribe > div ul:first-child {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.navEndFooter {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.navEndFooter ul{
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  justify-content: center;
+
+}

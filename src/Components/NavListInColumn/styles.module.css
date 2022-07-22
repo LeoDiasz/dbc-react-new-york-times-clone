@@ -1,0 +1,17 @@
+
+.divContentList {
+  text-align: left;
+}
+
+.divContentList h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.ulContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+

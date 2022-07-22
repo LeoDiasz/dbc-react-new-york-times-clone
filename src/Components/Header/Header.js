@@ -7,8 +7,8 @@ const Header = () => {
     <header>
         <div className={styles.headerTop}>
             <div>
-                <a href=""><GiHamburgerMenu /></a>
-                <a href=""><BiSearch /></a>
+                <GiHamburgerMenu />
+                <BiSearch />
             </div>
             <nav>
                 <ul>   
@@ -27,4 +27,4 @@ const Header = () => {
     </header>
   )
 }
-export default Header
+export  {Header}
