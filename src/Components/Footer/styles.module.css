@@ -21,6 +21,10 @@
   border-left: 1px solid rgb(226, 226, 226);
 }
 
+.footerSubscribe h3 {
+  font-size: 13px;
+}
+
 .footerSubscribe > div ul {
   display: flex;
   flex-direction: column;

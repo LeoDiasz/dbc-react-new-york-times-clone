@@ -1,7 +1,8 @@
+import styles from "./styles.module.css"
 
 export const CardNoticesSmall = ({title, imgUrl, listParagraph}) => {
   return (
-    <div>
+    <li className={styles.cardNoticesSmall}>
       <h4>{title}</h4>
       <img src={imgUrl} alt="" />
       <div>
@@ -9,6 +10,6 @@ export const CardNoticesSmall = ({title, imgUrl, listParagraph}) => {
           <p key={paragraph}>paragraph</p>
         ))}
       </div>
-    </div>
+    </li>
   )
 }
