@@ -1,0 +1,11 @@
+.NewsDescription h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #121212;
+    margin-bottom: 4px;
+}
+
+.NewsDescription p {
+    font-size: 14px;
+    color: #5A5A5A;
+}

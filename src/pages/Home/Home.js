@@ -24,8 +24,10 @@ export const Home = () => {
   return (
     <div className={styles.divHomeContent}>
       <MainContent >
-      
+        
       </MainContent>
+      <div className={styles.teste}>
+      </div>
       <AsideContent>
 
       </AsideContent>

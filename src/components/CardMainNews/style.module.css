@@ -1,0 +1,23 @@
+.cardMainNews {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cardMainNews>div>img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardMainNews>div:first-child {
+    width: 40%;
+}
+
+.cardMainNews>div:last-child {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}

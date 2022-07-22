@@ -3,3 +3,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.teste {
+    width: 1px;
+    background-color: #C7C7C7;
+}
