@@ -5,7 +5,7 @@ import { Logo } from '../Logo/Logo';
 import { ListTextSmall } from '../ListTextSmall/ListTextSmall';
 
 const Header = () => {
-    const listLinks = [{text: "World", url: "/world"}, {text: "U.S."}, {text: "Politics"}, {text: "N.Y."}, {text: "Business"}, {text: "Opinion"}, {text: "Tech", url: "/technology"}, {text: "Science", url: "/science"}, {text: "Health", url: "/health"}, {text: "Sports"}, {text: "Arts"}, {text: "Books"}, {text: "Style"}, {text: "Food"}, {text: "Travel"}, {text: "Magazine"}, {text: "T Magazine"}, {text: "Real State"}, {text: "Video"}, ]
+    const listLinks = [{text: "World", url: "/world"}, {text: "U.S."}, {text: "Politics", url: "politics"}, {text: "N.Y."}, {text: "Business"}, {text: "Opinion"}, {text: "Tech", url: "/technology"}, {text: "Science", url: "/science"}, {text: "Health", url: "/health"}, {text: "Sports"}, {text: "Arts"}, {text: "Books"}, {text: "Style"}, {text: "Food"}, {text: "Travel"}, {text: "Magazine"}, {text: "T Magazine"}, {text: "Real State"}, {text: "Video"}, ]
 
     return (
         <header>

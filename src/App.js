@@ -4,6 +4,7 @@ import { Footer } from './components/Footer/Footer';
 import {Header} from "./components/Header/Header"
 import { Health } from './pages/Health/Health';
 import { Home } from './pages/Home/Home';
+import { Politics } from './pages/Politics/Politics';
 import { Science } from './pages/Science/Science';
 import { Technology } from './pages/Technology/Technology';
 import { World } from './pages/World/World';
@@ -19,6 +20,7 @@ function App() {
           <Route path='/science' element={<Science/>}></Route>
           <Route path='/technology' element={<Technology/>}></Route>
           <Route path='/world' element={<World/>}></Route>
+          <Route path='/politics' element={<Politics/>}></Route>
         </Routes>
         <Footer/>
       </BrowserRouter>
