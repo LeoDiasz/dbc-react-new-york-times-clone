@@ -1,0 +1,40 @@
+.sectionNewsForTopicContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 0px;
+  margin-bottom: 50px;
+  border-top: 1px solid #000;
+  height: 275px;
+}
+
+.sectionNewsForTopicContent > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.sectionNewsForTopicContent > div small {
+  font-size: 11px;
+}
+
+.sectionNewsForTopicContent > div > * {
+  cursor: pointer;
+}
+
+
+.sectionNewsForTopicContent ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.sectionNewsForTopicContent ul > *:not(li:last-child)::after {
+  content:"";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #DFDFDF;
+  right: -20px;
+}

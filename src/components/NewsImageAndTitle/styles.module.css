@@ -1,0 +1,29 @@
+.newsImageAndTitleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.newsImageAndTitleContent img {
+  min-width: 190px;
+  height: 136px;
+  object-fit: cover;
+}
+
+.newsImageAndTitleContent > * {
+  width: 100%;
+}
+
+.newsImageAndTitleContent h4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.newsImageAndTitleContent:hover {
+  text-decoration: underline;
+}
+

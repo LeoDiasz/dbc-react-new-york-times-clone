@@ -1,9 +1,11 @@
 import {useEffect, useState} from 'react'
-import {SectionListNoticesWithDate} from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate"
 import axios from "axios"
+import {SectionListNoticesWithDate} from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate"
+import { SectionNewsForTopic } from '../../components/SectionNewsForTopic/SectionNewsForTopic'
 
 export const Science = () => {
   const [listNewsWithDate, setListNewsWithDate] = useState([])
+  const [listNewsClimate, setListNewsClimate] = useState([])
 
   const searchDatas = async () => {
 
@@ -16,7 +18,10 @@ export const Science = () => {
       return newDatas
     })
 
+    const newsTopicClimate = datasFilter.filter(news => news.section === "climate").map(news => {return {title: news.title, imgUrl: news.multimedia[0].url}})
+
     setListNewsWithDate(newsWithDate)
+    setListNewsClimate(newsTopicClimate)
 
   }
 
@@ -29,6 +34,7 @@ export const Science = () => {
   
   return (
     <section>
+      <SectionNewsForTopic topicTitle="Climate and Environment" listNews={listNewsClimate} moreDescription="More In Climate and Environment"/>
       <SectionListNoticesWithDate listNews={listNewsWithDate}/>
     </section>
   )
