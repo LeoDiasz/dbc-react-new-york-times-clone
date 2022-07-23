@@ -1,0 +1,80 @@
+.cardAsideNews *,
+.asideNewsBot * {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    margin-bottom: 24px;
+}
+
+.cardAsideNews {
+    padding: 16px 0;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardAsideNews h3 {
+    font-size: 24px;
+    line-height: 1.15em;
+    font-weight: 300;
+}
+
+.cardAsideNews p {
+    letter-spacing: 0.1px;
+    line-height: 1.1875rem;
+    font-size: 14px;
+    color: #5A5A5A;
+}
+
+.cardAsideNews img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.cardAsideNews {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.cardAsideNews small {
+    font-size: 9px;
+    color: #727272;
+    text-align: end;
+}
+
+.cardAsideNews>div {
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.asideNewsBot {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.asideNewsBot h3 {
+    font-size: 16px;
+    color: #121212;
+}
+
+.asideNewsBot>div {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.divisor {
+    width: 1px !important;
+    background-color: #DFDFDF !important;
+}
+
+.asideNewsBot>div>img {
+    height: 100px;
+    object-fit: cover;
+}

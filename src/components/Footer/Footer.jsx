@@ -33,13 +33,13 @@ export const Footer = () => {
           </ul>
           <div>
             <ul>
-              {listSubscribeOne.map(item => (
-                <ListTextSmall size="11px" text={item}/>
+              {listSubscribeOne.map((item, indice) => (
+                <ListTextSmall key={indice} size="11px" text={item}/>
               ))}
             </ul>
             <ul>
-              {listSubscribeTwo.map(item => (
-                <ListTextSmall text={item} size="11px" />
+              {listSubscribeTwo.map((item, indice) => (
+                <ListTextSmall key={indice} text={item} size="11px" />
               ))}
             </ul>
           </div>
@@ -47,8 +47,8 @@ export const Footer = () => {
       </nav>
       <nav className={styles.navEndFooter}>
         <ul>
-          {listEndFooter.map(list => (
-            <ListTextSmall text={list} size="11px"/>
+          {listEndFooter.map((list, indice) => (
+            <ListTextSmall key={indice} text={list} size="11px"/>
           ))}
         </ul>
       </nav>

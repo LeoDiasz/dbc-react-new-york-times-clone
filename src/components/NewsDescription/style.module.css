@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+
 .NewsDescription h3 {
+    font-family: 'Source Serif Pro';
     font-size: 18px;
     font-weight: 600;
     color: #121212;
@@ -8,4 +11,6 @@
 .NewsDescription p {
     font-size: 14px;
     color: #5A5A5A;
+    letter-spacing: 0.1px;
+    line-height: 1.1875rem;
 }

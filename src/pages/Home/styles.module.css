@@ -1,7 +1,17 @@
 .divHomeContent {
-    margin: 40px 0;
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
+}
+
+.divHomeContent>div:first-child {
+    width: 830px;
+}
+
+.asideContent {
+    width: 336px;
+    display: flex;
+    flex-direction: column;
 }
 
 .teste {

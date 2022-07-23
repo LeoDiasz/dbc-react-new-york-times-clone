@@ -7,7 +7,7 @@ const CardMainNews = ({url, title, description, subtitle}) => {
         <NewsDescription title={title} description={description}/>  
         <div>
             <img src={url} alt={subtitle} />
-            <small>{subtitle}</small>
+            <small><a href="#">{subtitle}</a></small>
         </div>
     </div>
   )
