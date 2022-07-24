@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react'
-import {useNotices} from "../../hooks/useNotices"
 
 export const Notice = () => {
   const [datasNotices, setDatasNotices] = useState({})

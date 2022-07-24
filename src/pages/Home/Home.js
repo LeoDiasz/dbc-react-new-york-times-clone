@@ -7,6 +7,7 @@ import CardAsideNews from '../../components/CardAsideNews/CardAsideNews'
 import AsideMultipleSection from '../../components/AsideMultipleSection/AsideMultipleSection'
 import FullWidthMultipleNews from '../../components/FullWidthMultipleNews/FullWidthMultipleNews'
 import AsideFourNews from '../../components/AsideFourNews/AsideFourNews'
+import { Header } from '../../components/Header/Header'
 
 export const Home = () => {
   const [data, setData] = useState([])
@@ -46,6 +47,7 @@ export const Home = () => {
   
   return (
     <>
+    <Header />
     <div className={styles.divHomeContent}>
       <div> 
         {primeiras.length > 0 ? primeiras.map((e, i) => (
