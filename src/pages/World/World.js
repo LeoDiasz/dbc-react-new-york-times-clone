@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 import { SectionListNoticesWithDate } from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate";
+import SectionMainNews from "../../components/SectionMainNews/SectionMainNews";
 import { SectionNewsForTopic } from "../../components/SectionNewsForTopic/SectionNewsForTopic";
 import styles from "./styles.module.css";
 
@@ -25,6 +26,7 @@ export const World = () => {
         byFor: news.byline,
         description: news.abstract,
         urlImg: news.multimedia[0].url,
+        copyright: news.multimedia[0].copyright,
       };
       return newDatas;
     });
@@ -51,6 +53,7 @@ export const World = () => {
         ]}
       />
       <section className={styles.worldContent}>
+        {<SectionMainNews listNews={listNewsWithDate} />}
         <SectionNewsForTopic listNews={listNewsWithDate} type="border" />
         <SectionNewsForTopic listNews={listNewsWithDate} type="border" />
         <SectionNewsForTopic

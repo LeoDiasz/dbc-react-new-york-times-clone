@@ -1,0 +1,24 @@
+.sectionMainNews {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.divisor {
+    width: 1px;
+    background-color: #DFDFDF;
+}
+
+.asideCard>div {
+    width: 330px;
+    border-bottom: 1px solid #DFDFDF;
+    padding: 12px 0;
+}
+
+.asideCard>div:last-child {
+    border: none;
+}
+
+.asideCard>div:first-child {
+    padding-top: 0;
+}
