@@ -1,7 +1,7 @@
 .sectionNewsForTopicContent {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding: 10px 0px;
   margin-bottom: 50px;
   border-top: 1px solid #000;
@@ -37,4 +37,10 @@
   height: 100%;
   background-color: #DFDFDF;
   right: -20px;
+}
+
+.NewsWithBorderTop {
+  border-top: 1px solid #DFDFDF;
+  margin-bottom: 0px;
+  padding: 20px 0px;
 }

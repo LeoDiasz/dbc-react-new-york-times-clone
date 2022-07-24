@@ -2,6 +2,7 @@ import axios from 'axios'
 import {useState, useEffect} from "react"
 
 import { SectionListNoticesWithDate } from '../../components/SectionListNoticesWithDate/SectionListNoticesWithDate'
+import { SectionNewsForTopic } from '../../components/SectionNewsForTopic/SectionNewsForTopic'
 import styles from './styles.module.css'
 
 
@@ -32,6 +33,10 @@ export const World = () => {
   
   return (
     <section className={styles.worldContent}>
+      <SectionNewsForTopic listNews={listNewsWithDate} type="border"/>
+      <SectionNewsForTopic listNews={listNewsWithDate} type="border"/>
+      <SectionNewsForTopic listNews={listNewsWithDate} topicTitle="The Saturday Profile" moreDescription="More in The Saturday Profile"/>
+      <SectionNewsForTopic listNews={listNewsWithDate} topicTitle="Dispatches" moreDescription="More in Dispatches"/>
       <SectionListNoticesWithDate listNews={listNewsWithDate}/>
     </section>
   )

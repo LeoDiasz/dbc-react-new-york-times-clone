@@ -18,7 +18,7 @@ export const Science = () => {
       return newDatas
     })
 
-    const newsTopicClimate = datasFilter.filter(news => news.section === "climate").map(news => {return {title: news.title, imgUrl: news.multimedia[0].url}})
+    const newsTopicClimate = datasFilter.filter(news => news.section === "climate").map(news => {return {title: news.title, urlImg: news.multimedia[0].url}})
 
     setListNewsWithDate(newsWithDate)
     setListNewsClimate(newsTopicClimate)
@@ -34,6 +34,8 @@ export const Science = () => {
   
   return (
     <section>
+      <SectionNewsForTopic listNews={listNewsClimate} type="border"/>
+      <SectionNewsForTopic topicTitle="Trilobites" listNews={listNewsClimate} moreDescription="More in trilobites"/>
       <SectionNewsForTopic topicTitle="Climate and Environment" listNews={listNewsClimate} moreDescription="More In Climate and Environment"/>
       <SectionListNoticesWithDate listNews={listNewsWithDate}/>
     </section>

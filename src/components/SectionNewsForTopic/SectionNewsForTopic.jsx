@@ -1,11 +1,11 @@
 import { NewsImageAndTitle } from "../NewsImageAndTitle/NewsImageAndTitle"
 import styles from "./styles.module.css"
 
-export const SectionNewsForTopic = ({topicTitle, listNews, moreDescription}) => {
+export const SectionNewsForTopic = ({topicTitle, listNews, moreDescription, type}) => {
   listNews = listNews.filter((news, i) =>  i < 5)
 
   return (
-    <section className={styles.sectionNewsForTopicContent}>
+    <section className={type === "border" ? `${styles.sectionNewsForTopicContent} ${styles.NewsWithBorderTop}`: styles.sectionNewsForTopicContent}>
       {topicTitle &&
       <div>
          <h3>{topicTitle}</h3>
@@ -14,7 +14,7 @@ export const SectionNewsForTopic = ({topicTitle, listNews, moreDescription}) => 
       }
       <ul>
         {listNews && listNews.map(news => (
-          <NewsImageAndTitle title={news.title} imgUrl={news.imgUrl} key={news.title}/>
+          <NewsImageAndTitle title={news.title} imgUrl={news.urlImg} key={news.title}/>
         ))}
       </ul>
     </section>

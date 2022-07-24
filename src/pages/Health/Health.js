@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import {SectionListNoticesWithDate} from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate"
 import axios from "axios"
+import { SectionNewsForTopic } from '../../components/SectionNewsForTopic/SectionNewsForTopic'
 
 
 export const Health = () => {
@@ -30,6 +31,9 @@ export const Health = () => {
   
   return (
     <section>
+      <SectionNewsForTopic listNews={listNewsWithDate} type="border"/>
+      <SectionNewsForTopic listNews={listNewsWithDate} topicTitle="From well" moreDescription="More in From Well"/>
+      <SectionNewsForTopic listNews={listNewsWithDate} topicTitle="The Covid-19 Pandemic" moreDescription="More In The Covid-19 Pandemic"/>
       <SectionListNoticesWithDate listNews={listNewsWithDate}/>
     </section>
   )
