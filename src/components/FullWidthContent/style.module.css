@@ -38,7 +38,7 @@
     color: #5A5A5A;
 }
 
-small {
+.fullWidthContent small {
     text-align: end;
     font-size: 9px;
     color: #727272;

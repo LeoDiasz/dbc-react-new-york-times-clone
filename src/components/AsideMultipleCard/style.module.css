@@ -11,7 +11,7 @@
 }
 
 .asideMultipleCard img {
-    width: 90px;
+    width: 90px !important;
     height: 90px;
     object-fit: cover;
 }
