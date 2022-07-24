@@ -1,37 +1,64 @@
-import {useEffect, useState} from 'react'
-import {SectionListNoticesWithDate} from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate"
-import axios from "axios"
-import { SectionNewsForTopic } from '../../components/SectionNewsForTopic/SectionNewsForTopic'
+import { useEffect, useState } from "react";
+import { SectionListNoticesWithDate } from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate";
+import axios from "axios";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
+import { SectionNewsForTopic } from "../../components/SectionNewsForTopic/SectionNewsForTopic";
 
 export const Technology = () => {
-  const [listNewsWithDate, setListNewsWithDate] = useState([])
+  const [listNewsWithDate, setListNewsWithDate] = useState([]);
 
   const searchDatas = async () => {
+    const { data: resultDatas } = await axios.get(
+      "https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=uTyFufZl0DiKiyx9pTZngoD17I5K4t1L"
+    );
 
-    const {data: resultDatas} = await axios.get("https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=uTyFufZl0DiKiyx9pTZngoD17I5K4t1L")
+    const datasFilter = resultDatas.results.filter(
+      (news) => news.title && news.multimedia
+    );
 
-    const datasFilter = resultDatas.results.filter(news => news.title && news.multimedia)
+    const newsWithDate = datasFilter.map((news) => {
+      const newDatas = {
+        date: news.published_date,
+        title: news.title,
+        byFor: news.byline,
+        description: news.abstract,
+        urlImg: news.multimedia[0].url,
+      };
+      return newDatas;
+    });
 
-    const newsWithDate = datasFilter.map(news => {
-      const newDatas = {date: news.published_date, title: news.title, byFor: news.byline, description: news.abstract, urlImg: news.multimedia[0].url}
-      return newDatas
-    })
-
-    setListNewsWithDate(newsWithDate)
-
-  }
+    setListNewsWithDate(newsWithDate);
+  };
 
   useEffect(() => {
+    searchDatas();
+  }, []);
 
-    searchDatas()
-
-  }, [])
-
-  
   return (
-    <section>
-      <SectionNewsForTopic topicTitle="Personal Technology" moreDescription="More in Personal Technology" listNews={listNewsWithDate}/>
-      <SectionListNoticesWithDate listNews={listNewsWithDate}/>
-    </section>
-  )
-}
+    <>
+      <SectionHeader
+        section="Technology"
+        subSections={[
+          "Dealbook",
+          "Markets",
+          "Economy",
+          "Energy",
+          "Media",
+          "Technology",
+          "Personal Tech",
+          "Small Business",
+          "Your Money",
+          "Mutual Funds & ETFS",
+        ]}
+      />
+      <section>
+        <SectionNewsForTopic
+          topicTitle="Personal Technology"
+          moreDescription="More in Personal Technology"
+          listNews={listNewsWithDate}
+        />
+        <SectionListNoticesWithDate listNews={listNewsWithDate} />
+      </section>
+    </>
+  );
+};
