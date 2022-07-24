@@ -1,4 +1,4 @@
-.cardMainNews {
+.cardMainNews button {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -6,19 +6,19 @@
     padding: 16px 0;
 }
 
-.cardMainNews>div>img {
+.cardMainNews button >div>img {
     height: 345px;
     width: 521px;
     object-fit: cover;
 }
 
-.cardMainNews>div:last-child {
+.cardMainNews button >div:last-child {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
 }
 
-.cardMainNews>div:last-child a {
+.cardMainNews button >div:last-child a {
     color: #727272;
 }
