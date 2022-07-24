@@ -9,7 +9,7 @@ import FullWidthMultipleNews from '../../components/FullWidthMultipleNews/FullWi
 import AsideFourNews from '../../components/AsideFourNews/AsideFourNews'
 import { Header } from '../../components/Header/Header'
 
-export const Home = () => {
+export const Home = ({searchDatas}) => {
   const [data, setData] = useState([])
   const [aside, setaSide] = useState([])
   const [asideMultiple, setAsideMultiple] = useState([])

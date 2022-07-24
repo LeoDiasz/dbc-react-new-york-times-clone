@@ -12,7 +12,7 @@ const SectionNewMainCard = ({ news }) => {
         <small>{news.copyright}</small>
       </div>
       <div>
-        <a href="#">
+        <a href="/">
           <h3>{news.title}</h3>
         </a>
         <p>{news.description}</p>

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { TopHeader } from '../../components/TopHeader/TopHeader'
 import styles from "./styles.module.css"
 
-
 export const Notice = () => {
   const [datasNotices, setDatasNotices] = useState({})
   const goForHome = useNavigate()

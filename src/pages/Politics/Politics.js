@@ -1,36 +1,12 @@
 import { useEffect, useState } from "react";
 import { SectionListNoticesWithDate } from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate";
-import axios from "axios";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
-export const Politics = () => {
-  const [listNewsWithDate, setListNewsWithDate] = useState([]);
-
-  const searchDatas = async () => {
-    const { data: resultDatas } = await axios.get(
-      "https://api.nytimes.com/svc/topstories/v2/politics.json?api-key=uTyFufZl0DiKiyx9pTZngoD17I5K4t1L"
-    );
-
-    const datasFilter = resultDatas.results.filter(
-      (news) => news.title && news.multimedia
-    );
-
-    const newsWithDate = datasFilter.map((news) => {
-      const newDatas = {
-        date: news.published_date,
-        title: news.title,
-        byFor: news.byline,
-        description: news.abstract,
-        urlImg: news.multimedia[0].url,
-      };
-      return newDatas;
-    });
-
-    setListNewsWithDate(newsWithDate);
-  };
+export const Politics = ({searchDatas}) => {
+  const [listNews, setListNews] = useState([]);
 
   useEffect(() => {
-    searchDatas();
+    searchDatas("politics", setListNews);
   }, []);
 
   return (
@@ -40,7 +16,7 @@ export const Politics = () => {
         subSections={["Joe Biden", "2022 MIDTERM ELECTIONS"]}
       />
       <section>
-        <SectionListNoticesWithDate listNews={listNewsWithDate} />
+        <SectionListNoticesWithDate listNews={listNews} />
       </section>
     </>
   );
