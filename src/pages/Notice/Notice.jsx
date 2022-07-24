@@ -1,13 +1,18 @@
-import React, { useState, useEffect} from 'react'
+import { useState, useEffect} from 'react'
+import { useNavigate } from 'react-router-dom'
+import { TopHeader } from '../../components/TopHeader/TopHeader'
+import styles from "./styles.module.css"
+
 
 export const Notice = () => {
   const [datasNotices, setDatasNotices] = useState({})
+  const goForHome = useNavigate()
 
   useEffect(() => {
-    
     let datas = localStorage.getItem("notice")
 
     if(!datas) {
+      goForHome("/")
       return
     }
 
@@ -16,12 +21,16 @@ export const Notice = () => {
     datas = JSON.parse(datas)    
 
     setDatasNotices(datas)
-    console.log(datas)
   }, [])
 
   return (
-    <section>
-      <h1>{datasNotices.title}</h1>
-    </section>
+    <>
+      <TopHeader/>
+      <section className={styles.noticeContent}>
+        {datasNotices.title && <h1>{datasNotices.title}</h1>}
+        {datasNotices.imgUrl && <img src={datasNotices.imgUrl} alt={datasNotices.title} />}
+        {datasNotices.description && <p>{datasNotices.description}</p>}
+      </section>
+    </>
   )
 }

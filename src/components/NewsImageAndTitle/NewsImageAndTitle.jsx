@@ -1,14 +1,14 @@
 import styles from "./styles.module.css"
 import { ButtonGoForNotices } from "../ButtonGoForNotices/ButtonGoForNotices"
 
-export const NewsImageAndTitle = ({imgUrl, title}) => {
+export const NewsImageAndTitle = ({imgUrl, title, description}) => {
 
   return (
-    <ButtonGoForNotices datas={{imgUrl, title}}>
-      <li className={styles.newsImageAndTitleContent}>
+    <li className={styles.newsImageAndTitleContent}>
+      <ButtonGoForNotices datas={{imgUrl, title, description}}>
         <img src={imgUrl} alt={title} />
         <h4>{title}</h4>
-      </li>
-    </ButtonGoForNotices>
+      </ButtonGoForNotices>
+    </li>
   )
 }

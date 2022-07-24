@@ -1,10 +1,9 @@
-.newsImageAndTitleContent {
+.newsImageAndTitleContent , .newsImageAndTitleContent button{
   display: flex;
   flex-direction: column;
-  gap: 18px;
   width: 100%;
   position: relative;
-  cursor: pointer;
+  gap: 18px;
 }
 
 .newsImageAndTitleContent img {
@@ -13,7 +12,7 @@
   object-fit: cover;
 }
 
-.newsImageAndTitleContent > * {
+.newsImageAndTitleContent button > * {
   width: 100%;
 }
 

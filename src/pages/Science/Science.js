@@ -31,7 +31,7 @@ export const Science = () => {
     const newsTopicClimate = datasFilter
       .filter((news) => news.section === "climate")
       .map((news) => {
-        return { title: news.title, urlImg: news.multimedia[0].url };
+        return { title: news.title, urlImg: news.multimedia[0].url, description: news.abstract };
       });
 
     setListNewsWithDate(newsWithDate);

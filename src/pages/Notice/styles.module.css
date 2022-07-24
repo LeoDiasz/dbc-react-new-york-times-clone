@@ -1,0 +1,15 @@
+.noticeContent {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  padding: 40px 0;
+}
+
+.noticeContent img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  cursor: pointer
+}
