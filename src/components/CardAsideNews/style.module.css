@@ -7,18 +7,23 @@
     margin-bottom: 24px;
 }
 
-.cardAsideNews {
+.cardAsideNews button {
     padding: 16px 0;
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    text-align: left;
 }
 
 .cardAsideNews h3 {
     font-size: 24px;
     line-height: 1.15em;
     font-weight: 300;
+}
+
+.cardAsideNews h3:hover {
+    text-decoration: underline;
 }
 
 .cardAsideNews p {

@@ -6,7 +6,8 @@ const AsideFourNews = ({news}) => {
  
   return (
     <div className={styles.asideFourNews}>
-      <h3>Opinion</h3>
+      {news.length && <h3>Opinion</h3>}
+      
       {news.map((e, i) => i % 3 === 0 ? (
         <KickerWithImage className={i === news.length -1 ? 'border' : 'noborder'} news={e} />
       ) : 

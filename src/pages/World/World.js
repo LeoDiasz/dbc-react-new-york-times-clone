@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { SectionListNoticesWithDate } from "../../components/SectionListNoticesWithDate/SectionListNoticesWithDate";
@@ -7,6 +6,7 @@ import { SectionNewsForTopic } from "../../components/SectionNewsForTopic/Sectio
 import styles from "./styles.module.css";
 
 export const World = ({searchDatas}) => {
+  const listSectionsHeader = ["Africa","Americas","Asia","Australia","Canada", "Europe", "Middle East"]
   const [listNews, setListNews] = useState([]);
 
   useEffect(() => {
@@ -17,18 +17,10 @@ export const World = ({searchDatas}) => {
     <>
       <SectionHeader
         section="World News"
-        subSections={[
-          "Africa",
-          "Americas",
-          "Asia",
-          "Australia",
-          "Canada",
-          "Europe",
-          "Middle East",
-        ]}
+        subSections={listSectionsHeader}
       />
       <section className={styles.worldContent}>
-        {<SectionMainNews listNews={listNews} />}
+        <SectionMainNews listNews={listNews} />
         <SectionNewsForTopic listNews={listNews} type="border" />
         <SectionNewsForTopic listNews={listNews} type="border" />
         <SectionNewsForTopic

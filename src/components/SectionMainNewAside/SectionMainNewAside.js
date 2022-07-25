@@ -9,7 +9,7 @@ const SectionMainNewAside = ({ news }) => {
     <div className={styles.sectionMainNewAside}>
       <div>
         <h2>{news.title}</h2>
-        <img src={news.urlImg} alt="" />
+        <img src={news.img} alt="" />
       </div>
       <p>{news.description}</p>
       <small>

@@ -8,7 +8,7 @@ const SectionNewMainCard = ({ news }) => {
   return (
     <div className={styles.mainCard}>
       <div>
-        <img src={news.urlImg} />
+        <img src={news.img} />
         <small>{news.copyright}</small>
       </div>
       <div>

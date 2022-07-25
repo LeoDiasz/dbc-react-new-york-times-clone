@@ -1,16 +1,19 @@
-.kickerWithImage {
+.kickerWithImage button {
+    display: grid;
+    grid-template-columns: 1fr 150px;
     padding: 16px 0;
     border-bottom: 1px solid #DFDFDF;
-    display: flex;
+    text-align: left;
+    gap: 15px;
 }
 
 .kickerWithImage img {
+    width: 100%;
     height: 150px;
-    width: 150px;
     object-fit: cover;
 }
 
-.kickerWithImage>div>h3:first-child {
+.kickerWithImage button > div >h3:first-child {
     font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -19,8 +22,8 @@
     letter-spacing: 1px;
 }
 
-.kickerWithImage>div>h3:last-child {
-    font-size: 22px;
+.kickerWithImage button >div>h3:last-child {
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     color: #121212;

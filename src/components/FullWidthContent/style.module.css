@@ -4,19 +4,23 @@
     display: flex;
 }
 
-.fullWidthContent>div:first-child>div>img {
+.fullWidthContent>div:first-child {
+    height: 100%;
+}
+
+.fullWidthContent>div:first-child div>img {
     width: 830px;
     height: 550px;
     object-fit: cover;
 }
 
-.fullWidthContent>div:first-child>div:first-child {
+.fullWidthContent>div:first-child button > div:first-child {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.fullWidthContent>div:first-child>div:last-child {
+.fullWidthContent>div:first-child> button > div:last-child {
     width: 80%;
     margin: auto;
     display: flex;
@@ -26,12 +30,12 @@
     gap: 6px;
 }
 
-.fullWidthContent>div:first-child>div:last-child h3 {
+.fullWidthContent>div:first-child > button >div:last-child h3 {
     font-size: 28px;
     line-height: 1.15em;
 }
 
-.fullWidthContent>div:first-child>div:last-child p {
+.fullWidthContent>div:first-child > button > div:last-child p {
     font-size: 14px;
     letter-spacing: 0.1px;
     line-height: 1.1875rem;
@@ -54,25 +58,26 @@
     display: flex;
 }
 
-.asideCol>div {
+.asideCol > div > button {
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.asideCol>div>img {
+.asideCol > div > button >img {
     width: 150px;
     height: 100px;
     object-fit: cover;
 }
 
-.asideCol>div>h3 {
+.asideCol > div > button >h3 {
     font-size: 16px;
     line-height: 1.2em;
     letter-spacing: 0.01em;
 }
 
-.asideCol>div>p {
+.asideCol > div > button >p {
     letter-spacing: 0.1px;
     line-height: 1.1875rem;
     font-size: 14px;

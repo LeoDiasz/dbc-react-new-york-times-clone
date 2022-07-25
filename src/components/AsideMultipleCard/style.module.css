@@ -2,16 +2,18 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.asideMultipleCard {
-    display: flex;
-    justify-content: space-between;
+.asideMultipleCard button{
+    display: grid;
+    grid-template-columns: 1fr 90px;
     gap: 30px;
     border-bottom: 1px solid #DFDFDF;
     padding: 16px 0;
+    width: 100%;
+    text-align: left;
 }
 
 .asideMultipleCard img {
-    width: 90px !important;
+    width: 100%;
     height: 90px;
     object-fit: cover;
 }

@@ -3,7 +3,11 @@
     border-bottom: 1px solid #DFDFDF;
 }
 
-.kickerAndTitleNew>h3:first-child {
+.kickerAndTitleNew button {
+    text-align: left;
+}
+
+.kickerAndTitleNew button >h3:first-child {
     font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -12,8 +16,8 @@
     letter-spacing: 1px;
 }
 
-.kickerAndTitleNew>h3:last-child {
-    font-size: 22px;
+.kickerAndTitleNew button >h3:last-child {
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     color: #121212;

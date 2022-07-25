@@ -1,12 +1,11 @@
 import {useEffect, useState} from 'react'
-import axios from 'axios'
 import FullWidthContent from '../../components/FullWidthContent/FullWidthContent'
 import CardMainNews from '../../components/CardMainNews/CardMainNews'
 import CardAsideNews from '../../components/CardAsideNews/CardAsideNews'
 import AsideMultipleSection from '../../components/AsideMultipleSection/AsideMultipleSection'
-import FullWidthMultipleNews from '../../components/FullWidthMultipleNews/FullWidthMultipleNews'
 import AsideFourNews from '../../components/AsideFourNews/AsideFourNews'
 import { Header } from '../../components/Header/Header'
+import { SectionNewsForTopic } from '../../components/SectionNewsForTopic/SectionNewsForTopic'
 import styles from './styles.module.css'
 
 export const Home = ({searchDatas}) => {
@@ -40,7 +39,7 @@ export const Home = ({searchDatas}) => {
       </aside>
     </div>    
     <section>
-      {listMoreNews && <FullWidthMultipleNews news={listMoreNews}/>}
+      {listMoreNews && <SectionNewsForTopic listNews={listMoreNews} topicTitle="More News"/>}
       {listEndNews.length && <FullWidthContent news={listEndNews}/>}
     </section>
     
