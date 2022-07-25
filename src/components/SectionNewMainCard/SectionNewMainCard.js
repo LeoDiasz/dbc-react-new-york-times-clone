@@ -1,6 +1,6 @@
-import styles from "./style.module.css";
 import moment from "moment";
 import { ButtonGoForNotices } from "../ButtonGoForNotices/ButtonGoForNotices";
+import styles from "./style.module.css";
 
 const SectionNewMainCard = ({ news }) => {
   let hours = moment(news.date).fromNow();

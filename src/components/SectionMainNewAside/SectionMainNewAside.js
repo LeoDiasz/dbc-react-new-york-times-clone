@@ -1,5 +1,5 @@
-import styles from "./style.module.css";
 import moment from "moment";
+import styles from "./style.module.css";
 import { ButtonGoForNotices } from "../ButtonGoForNotices/ButtonGoForNotices";
 
 const SectionMainNewAside = ({ news }) => {
