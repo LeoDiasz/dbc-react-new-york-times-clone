@@ -1,7 +1,7 @@
 .sectionMainNews {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin: 40px 0;
 }
 
 .divisor {

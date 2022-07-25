@@ -7,20 +7,12 @@ const SectionMainNews = ({ listNews }) => {
 
   return (
     <section className={styles.sectionMainNews}>
-      {listNews.length > 0 ? <SectionNewMainCard news={listNews[0]} /> : ""}
+      {listNews.length && <SectionNewMainCard news={listNews[0]} />}
       <div className={styles.divisor}></div>
       <aside className={styles.asideCard}>
-        {listNews.length > 0 ? (
-          <SectionMainNewAside news={listNews[1]} border="teste" />
-        ) : (
-          ""
-        )}
-        {listNews.length > 0 ? (
-          <SectionMainNewAside news={listNews[2]} border="border-bottom" />
-        ) : (
-          ""
-        )}
-        {listNews.length > 0 ? <SectionMainNewAside news={listNews[3]} /> : ""}
+        {listNews.length && <SectionMainNewAside news={listNews[1]} border="teste" />}
+        {listNews.length && <SectionMainNewAside news={listNews[2]} border="border-bottom" />}
+        {listNews.length && <SectionMainNewAside news={listNews[3]} /> }
       </aside>
     </section>
   );

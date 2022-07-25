@@ -1,5 +1,6 @@
 import styles from "./style.module.css";
 import moment from "moment";
+import { ButtonGoForNotices } from "../ButtonGoForNotices/ButtonGoForNotices";
 
 const SectionMainNewAside = ({ news }) => {
   let hours = moment(news.date).fromNow();
@@ -7,14 +8,16 @@ const SectionMainNewAside = ({ news }) => {
 
   return (
     <div className={styles.sectionMainNewAside}>
-      <div>
-        <h2>{news.title}</h2>
-        <img src={news.img} alt="" />
-      </div>
-      <p>{news.description}</p>
-      <small>
-        {hours} - {news.byFor}
-      </small>
+      <ButtonGoForNotices datas={news}>
+        <div>
+          <h2>{news.title}</h2>
+          <img src={news.img} alt="" />
+        </div>
+        <p>{news.description}</p>
+        <small>
+          {hours} - {news.byFor}
+        </small>
+      </ButtonGoForNotices>
     </div>
   );
 };

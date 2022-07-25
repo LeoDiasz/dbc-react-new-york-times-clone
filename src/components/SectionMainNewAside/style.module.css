@@ -4,13 +4,13 @@
     object-fit: cover;
 }
 
-.sectionMainNewAside {
+.sectionMainNewAside button{
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.sectionMainNewAside * {
+.sectionMainNewAside button * {
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -20,7 +20,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sectionMainNewAside>div {
+.sectionMainNewAside > button >div {
     display: flex;
     gap: 10px;
 }

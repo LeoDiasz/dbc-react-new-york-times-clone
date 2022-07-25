@@ -1,4 +1,4 @@
-.mainCard {
+.mainCard button {
     width: 810px;
     display: flex;
     flex-direction: column;
@@ -13,9 +13,10 @@
     text-transform: uppercase;
 }
 
-.mainCard>div>img {
-    width: 810px;
+.mainCard button >div>img {
+    width: 100%;
     height: 540px;
+    object-fit: cover;
 }
 
 .mainCard * {
@@ -28,30 +29,30 @@
     font-size: 23px;
 }
 
-.mainCard>div>h3 {
+.mainCard button >div>h3 {
     font-weight: 700;
     line-height: 1.6875rem;
     font-size: 23px;
 }
 
-.mainCard>div>p:first-child {
+.mainCard button >div>p:first-child {
     font-weight: 500;
     line-height: 1.375rem;
     font-size: 15px;
 }
 
-.mainCard>div>p:last-child {
+.mainCard button >div>p:last-child {
     font-size: 11px;
     color: #727272;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.mainCard>div:first-child {
+.mainCard button >div:first-child {
     display: flex;
     flex-direction: column;
 }
 
-.mainCard>div:last-child {
+.mainCard button >div:last-child {
     margin-top: 12px;
     flex-direction: column;
     gap: 8px;
