@@ -9,7 +9,7 @@ export const TopHeader = ({section}) => {
       <div>
         <GiHamburgerMenu />
         <BiSearch />
-        {section && <a href="#">{section}</a>}
+        {section && <a href="/">{section}</a>}
       </div>
       <Logo width="195px" />
       <div>

@@ -31,14 +31,14 @@ export const Home = ({searchDatas}) => {
             <CardMainNews key={i} news={news}/>
         ))}
       </main>
-      <div className={styles.teste}></div>
+      <div className={styles.divisor}></div>
       <aside className={styles.asideContent}>
         {listNewsForAside.length && <CardAsideNews news={listNewsForAside}/>}
         {listNewsForAsideOpinions && <AsideFourNews news={listNewsForAsideOpinions}/>}
         {listNewsForAsideMultiples && <AsideMultipleSection news={listNewsForAsideMultiples}/>}
       </aside>
     </div>    
-    <section>
+    <section className={styles.sectionMoreNewsContent}>
       {listMoreNews && <SectionNewsForTopic listNews={listMoreNews} topicTitle="More News"/>}
       {listEndNews.length && <FullWidthContent news={listEndNews}/>}
     </section>

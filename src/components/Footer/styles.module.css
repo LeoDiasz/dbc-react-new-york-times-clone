@@ -44,7 +44,22 @@
 .navEndFooter ul{
   display: flex;
   width: 100%;
-  gap: 10px;
+  gap: 5px;
   justify-content: center;
+
+}
+
+
+@media(max-width: 1240px) {
+
+  .footerContent {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navEndFooter {
+    display: none
+  }
 
 }

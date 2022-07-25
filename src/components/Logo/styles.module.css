@@ -1,6 +1,14 @@
 
-.LogoContent {
+.logoContent {
   cursor: pointer;
   transition: filter 0.3s;
 }
 
+
+@media(max-width: 576px) {
+  
+  .logoContent {
+    width: 80px
+  }  
+  
+}

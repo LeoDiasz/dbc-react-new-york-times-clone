@@ -9,9 +9,9 @@ const AsideFourNews = ({news}) => {
       {news.length && <h3>Opinion</h3>}
       
       {news.map((e, i) => i % 3 === 0 ? (
-        <KickerWithImage className={i === news.length -1 ? 'border' : 'noborder'} news={e} />
+        <KickerWithImage  key={i} className={i === news.length -1 ? 'border' : 'noborder'} news={e} />
       ) : 
-      <KickerAndTitleNew className={i === news.length -1 ? 'border' : 'noborder'} news={e}/>)}
+      <KickerAndTitleNew key={i} className={i === news.length -1 ? 'border' : 'noborder'} news={e}/>)}
     </div>
   )
 }

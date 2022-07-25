@@ -15,6 +15,15 @@
   letter-spacing: 0.7px;
 }
 
+.topHeaderContent button {
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.topHeaderContent button:hover {
+  filter: brightness(0.95);
+}
+
 .topHeaderContent >div:first-child {
   display: flex;
   gap: 32px;
