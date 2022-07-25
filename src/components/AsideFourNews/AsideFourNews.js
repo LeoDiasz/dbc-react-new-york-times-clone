@@ -8,7 +8,7 @@ const AsideFourNews = ({news}) => {
     <div className={styles.asideFourNews}>
       {news.length && <h3>Opinion</h3>}
       
-      {news.map((e, i) => i % 3 === 0 ? (
+      {news && news.map((e, i) => i % 3 === 0 ? (
         <KickerWithImage  key={i} className={i === news.length -1 ? 'border' : 'noborder'} news={e} />
       ) : 
       <KickerAndTitleNew key={i} className={i === news.length -1 ? 'border' : 'noborder'} news={e}/>)}

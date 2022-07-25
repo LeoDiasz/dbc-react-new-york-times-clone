@@ -25,12 +25,12 @@ export const World = ({searchDatas}) => {
     <>
       <SectionHeader section="World News" subSections={listSectionsHeader}s/>
       <section>
-        <SectionMainNews listNews={listNewsMains} />
-        <SectionNewsForTopic listNews={listNewsTopicOne} type="border" />
-        <SectionNewsForTopic listNews={listNewsTopicTwo} type="border" />
-        <SectionNewsForTopic listNews={listNewsSaturday} topicTitle="The Saturday Profile" moreDescription="More in The Saturday Profile"/>
-        <SectionNewsForTopic listNews={listNewsDispatches} topicTitle="Dispatches" moreDescription="More in Dispatches"/>
-        <SectionListNoticesWithDate listNews={listNews} />
+        {listNewsMains.length > 0 && <SectionMainNews listNews={listNewsMains} />}
+        {listNewsTopicOne.length > 0 && <SectionNewsForTopic listNews={listNewsTopicOne} type="border" />}
+        {listNewsTopicTwo.length > 0 && <SectionNewsForTopic listNews={listNewsTopicTwo} type="border" />}
+        {listNewsSaturday.length > 0 && <SectionNewsForTopic listNews={listNewsSaturday} topicTitle="The Saturday Profile" moreDescription="More in The Saturday Profile"/>}
+        {listNewsDispatches.length > 0 && <SectionNewsForTopic listNews={listNewsDispatches} topicTitle="Dispatches" moreDescription="More in Dispatches"/>}
+        {listNews.length > 0 && <SectionListNoticesWithDate listNews={listNews} />}
       </section>
     </>
   );

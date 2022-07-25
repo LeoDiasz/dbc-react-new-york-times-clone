@@ -33,14 +33,14 @@ export const Home = ({searchDatas}) => {
       </main>
       <div className={styles.divisor}></div>
       <aside className={styles.asideContent}>
-        {listNewsForAside.length && <CardAsideNews news={listNewsForAside}/>}
-        {listNewsForAsideOpinions && <AsideFourNews news={listNewsForAsideOpinions}/>}
-        {listNewsForAsideMultiples && <AsideMultipleSection news={listNewsForAsideMultiples}/>}
+        {listNewsForAside.length > 0 && <CardAsideNews news={listNewsForAside}/>}
+        {listNewsForAsideOpinions.length > 0 && <AsideFourNews news={listNewsForAsideOpinions}/>}
+        {listNewsForAsideMultiples.length > 0 && <AsideMultipleSection news={listNewsForAsideMultiples}/>}
       </aside>
     </div>    
     <section className={styles.sectionMoreNewsContent}>
-      {listMoreNews && <SectionNewsForTopic listNews={listMoreNews} topicTitle="More News"/>}
-      {listEndNews.length && <FullWidthContent news={listEndNews}/>}
+      {listMoreNews.length > 0 && <SectionNewsForTopic listNews={listMoreNews} topicTitle="More News"/>}
+      {listEndNews.length > 0 && <FullWidthContent news={listEndNews}/>}
     </section>
     
     </>

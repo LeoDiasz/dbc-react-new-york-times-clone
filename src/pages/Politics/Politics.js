@@ -16,8 +16,8 @@ export const Politics = ({searchDatas}) => {
     <>
       <SectionHeader section="U.S. Politics" subSections={["Joe Biden", "2022 MIDTERM ELECTIONS"]}/>
       <section>
-        <SectionMainNews listNews={listNewsMains}/>
-        <SectionListNoticesWithDate listNews={listNews} />
+        {listNewsMains.length > 0 && <SectionMainNews listNews={listNewsMains} />}
+        {listNews.length > 0 && <SectionListNoticesWithDate listNews={listNews} />}
       </section>
     </>
   );

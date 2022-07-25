@@ -19,9 +19,9 @@ export const Technology = ({searchDatas}) => {
     <>
       <SectionHeader section="Technology" subSections={listSectionsHeader}/>
       <section>
-        <SectionMainNews listNews={listNewsMains}/>
-        <SectionNewsForTopic topicTitle="Personal Technology" moreDescription="More in Personal Technology" listNews={listNewsPersonalTechnology} />
-        <SectionListNoticesWithDate listNews={listNews} />
+        {listNewsMains.length > 0 && <SectionMainNews listNews={listNewsMains} />}
+        {listNewsPersonalTechnology.length > 0 && <SectionNewsForTopic topicTitle="Personal Technology" moreDescription="More in Personal Technology" listNews={listNewsPersonalTechnology} />}
+        {listNews.length > 0 && <SectionListNoticesWithDate listNews={listNews} />}
       </section>
     </>
   );

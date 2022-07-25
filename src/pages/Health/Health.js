@@ -22,13 +22,13 @@ export const Health = ({searchDatas}) => {
 
   return (
     <>
-      <SectionHeader section="Science" subSections={listSectionsHeader}/>
+      <SectionHeader section="Health" subSections={listSectionsHeader}/>
       <section>
-        <SectionMainNews listNews={listNewsMains}/>
-        <SectionNewsForTopic listNews={listNewsTopicOne} type="border"/>
-        <SectionNewsForTopic listNews={listNewsFromWell} topicTitle="From well" moreDescription="More in From Well"/>
-        <SectionNewsForTopic listNews={listNewsCovid} topicTitle="The Covid-19 Pandemic" moreDescription="More In The Covid-19 Pandemic"/>
-        <SectionListNoticesWithDate listNews={listNews}/>
+        {listNewsMains.length > 0 && <SectionMainNews listNews={listNewsMains} />}
+        {listNewsTopicOne.length > 0 && <SectionNewsForTopic listNews={listNewsTopicOne} type="border"/>}
+        {listNewsFromWell.length > 0 && <SectionNewsForTopic listNews={listNewsFromWell} topicTitle="From well" moreDescription="More in From Well"/>}
+        {listNewsCovid.length > 0 && <SectionNewsForTopic listNews={listNewsCovid} topicTitle="The Covid-19 Pandemic" moreDescription="More In The Covid-19 Pandemic"/>}
+        {listNews.length > 0 && <SectionListNoticesWithDate listNews={listNews}/>}
       </section>
     </>
   )
