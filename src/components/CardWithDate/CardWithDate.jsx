@@ -1,22 +1,23 @@
-import styles from "./styles.module.css"
 import moment from "moment"
 import { ButtonGoForNotices } from "../ButtonGoForNotices/ButtonGoForNotices"
+import styles from "./styles.module.css"
 
-export const CardWithDate = ({date, imgUrl, title, description, subtitle}) => {
-  date = moment(date).format("ll")
+export const CardWithDate = ({news}) => {
+  const date = moment(news.date).format("ll")
+  const newsFormat = {title: news.title, description: news.description, img: news.img}
   
   return (
     <li className={styles.cardWithDateContent}>
-      <ButtonGoForNotices datas={{title, description, imgUrl}}>
+      <ButtonGoForNotices datas={newsFormat}>
         <div>
           <small>{date}</small>
         </div>
         <div> 
-          <h2>{title}</h2>
-          <p>{description}</p>
-          <small>{subtitle}</small>
+          <h2>{news.title}</h2>
+          <p>{news.description}</p>
+          <small>{news.subtitle}</small>
         </div>
-        <img src={imgUrl} alt={subtitle} />
+        <img src={news.img} alt={news.subtitle} />
       </ButtonGoForNotices>
     </li>
   )

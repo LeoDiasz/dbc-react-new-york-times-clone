@@ -14,7 +14,7 @@ export const SectionNewsForTopic = ({topicTitle, listNews, moreDescription, type
       }
       <ul>
         {listNews && listNews.map(news => (
-          <NewsImageAndTitle title={news.title} imgUrl={news.urlImg} key={news.title} description={news.description}/>
+          <NewsImageAndTitle title={news.title} img={news.img} key={news.title} description={news.description}/>
         ))}
       </ul>
     </section>

@@ -62,19 +62,23 @@
     color: #121212;
 }
 
-.asideNewsBot>div {
+.asideNewsBot > li {
     width: 150px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.divisor {
-    width: 1px !important;
-    background-color: #DFDFDF !important;
+.asideNewsBot > *:not(li:last-child)::after {
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #DFDFDF;
+    right: -18px;
 }
 
-.asideNewsBot>div>img {
+.asideNewsBot > li >img {
     height: 100px;
     object-fit: cover;
 }

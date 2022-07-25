@@ -3,7 +3,7 @@ import KickerWithImage from '../KickerWithImage/KickerWithImage'
 import styles from './style.module.css'
 
 const AsideFourNews = ({news}) => {
-  console.log(news)
+ 
   return (
     <div className={styles.asideFourNews}>
       <h3>Opinion</h3>

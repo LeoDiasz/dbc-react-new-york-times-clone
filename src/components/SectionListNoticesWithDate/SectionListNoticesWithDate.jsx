@@ -20,7 +20,7 @@ export const SectionListNoticesWithDate = ({listNews}) => {
       </nav>
       <ul>
         {listNews.map(news => (
-          <CardWithDate date={news.date} imgUrl={news.urlImg} title={news.title} description={news.description} subtitle={news.byFor} key={news.title}/>
+          <CardWithDate news={news} key={news.title}/>
         ))}
       </ul>
       

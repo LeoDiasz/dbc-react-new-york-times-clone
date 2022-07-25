@@ -4,10 +4,10 @@ const KickerWithImage = ({news}) => {
   return (
     <div className={styles.kickerWithImage}>
         <div>
-            <h3>{news.kicker}</h3>
+            <h3>{news.kicker ? news.kicker : "Guest"}</h3>
             <h3>{news.title}</h3>
         </div>
-        <img src={news.multimedia[2].url} alt="" />
+        <img src={news.img} alt={news.title} />
     </div>
   )
 }

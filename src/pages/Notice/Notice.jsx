@@ -27,7 +27,7 @@ export const Notice = () => {
       <TopHeader/>
       <section className={styles.noticeContent}>
         {datasNotices.title && <h1>{datasNotices.title}</h1>}
-        {datasNotices.imgUrl && <img src={datasNotices.imgUrl} alt={datasNotices.title} />}
+        {datasNotices.img && <img src={datasNotices.img} alt={datasNotices.title} />}
         {datasNotices.description && <p>{datasNotices.description}</p>}
       </section>
     </>

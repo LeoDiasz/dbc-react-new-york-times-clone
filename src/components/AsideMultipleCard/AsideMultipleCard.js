@@ -4,7 +4,7 @@ const AsideMultipleCard = ({news}) => {
   return (
     <div className={styles.asideMultipleCard}>
         <h3>{news.title}</h3>
-        <img src={news.multimedia[2].url} alt="" />
+        <img src={news.img} alt={news.title} />
     </div>
   )
 }

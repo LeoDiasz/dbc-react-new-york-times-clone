@@ -1,29 +1,23 @@
+import {NewsImageAndTitle} from "../../components/NewsImageAndTitle/NewsImageAndTitle"
 import styles from './style.module.css'
 
 const CardAsideNews = ({news}) => {
-  return (
+    return (
     <div className={styles.card}>
         <div className={styles.cardAsideNews}>
             <div>
-                <img src={news[0].multimedia[0].url} alt="" />
+                <img src={news[0].img} alt={news[0].description} />
                 <small>Taylor Turner and Axel Boada</small>
             </div>
             <h3>{news[0].title} </h3>
-            <p>{news[0].abstract}</p>
+            <p>{news[0].description}</p>
         </div>
 
         <div className={styles.asideNewsBot}>
-            <div>
-                <img src={news[1].multimedia[0].url}  alt="" />
-                <h3>{news[1].title}</h3>
-            </div>
-            <div className={styles.divisor}></div>
-            <div>
-                <img src={news[2].multimedia[0].url}  alt="" />
-                <h3>{news[2].title}</h3>
-            </div>
+            <NewsImageAndTitle title={news[1].title} img={news[1].img}/>
+            <NewsImageAndTitle title={news[2].title} img={news[2].img}/>
         </div>
     </div>
-  )
+    )
 }
 export default CardAsideNews

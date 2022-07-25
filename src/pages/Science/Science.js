@@ -5,7 +5,7 @@ import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 export const Science = ({searchDatas}) => {
   const [listNews, setListNews] = useState([]);
-  const [listNewsClimate, setListNewsClimate] = useState([]);
+ 
 
   useEffect(() => {
     searchDatas("science", setListNews);
@@ -26,15 +26,15 @@ export const Science = ({searchDatas}) => {
         ]}
       />
       <section>
-        <SectionNewsForTopic listNews={listNewsClimate} type="border" />
+        <SectionNewsForTopic listNews={listNews} type="border" />
         <SectionNewsForTopic
           topicTitle="Trilobites"
-          listNews={listNewsClimate}
+          listNews={listNews}
           moreDescription="More in trilobites"
         />
         <SectionNewsForTopic
           topicTitle="Climate and Environment"
-          listNews={listNewsClimate}
+          listNews={listNews}
           moreDescription="More In Climate and Environment"
         />
         <SectionListNoticesWithDate listNews={listNews} />
