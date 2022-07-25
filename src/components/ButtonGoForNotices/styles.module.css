@@ -4,4 +4,14 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  text-align: left;
+  transition: filter 0.3s;
+}
+
+.removeContentButton img:hover {
+  filter: brightness(0.95);
+}
+
+.removeContentButton h1:hover, .removeContentButton h2:hover, .removeContentButton h3:hover, .removeContentButton h4:hover {
+  text-decoration: underline;
 }

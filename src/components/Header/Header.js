@@ -1,8 +1,8 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiSearch } from "react-icons/bi";
-import styles from "./styles.module.css";
 import { Logo } from "../Logo/Logo";
 import { ListTextSmall } from "../ListTextSmall/ListTextSmall";
+import styles from "./styles.module.css";
 
 const Header = () => {
   const listLinks = [
