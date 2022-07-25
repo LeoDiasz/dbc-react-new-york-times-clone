@@ -1,6 +1,6 @@
 .sectionMainNewAside img {
     height: 75px;
-    width: 75px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    width: 100%;
 }
 
 .sectionMainNewAside button * {
@@ -21,8 +22,10 @@
 }
 
 .sectionMainNewAside > button >div {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 80px;
     gap: 10px;
+    width: 100%;
 }
 
 .sectionMainNewAside h2 {

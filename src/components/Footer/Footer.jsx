@@ -11,7 +11,7 @@ export const Footer = () => {
   const listArts = ["Today's Arts", "Art & Design", "Books", "Best Sellers Book List", "Dance", "Movies", "Music", "Pop Culture", "Television", "Theater", "What to Watch", "Video: Arts"]
   const listLiving = ["Automotive", "Games", "Education", "Food", "Health", "Jobs", "Love", "Magazine", "Parenting", "Real Estate", "Style", "T Magazine", "Travel"]
   const listMore = ["Reader Center", "The Athletic", "Wirecutter", "Cooking", "Headway", "Live Events", "The Learning Network", "Tools & Services", "Podcasts", "Video", "TimesMachine", "NYT Store", "Manage My Account", "NYTLicensing"]
-  const listEndFooter = ["The New York Times Company", "NYTCo", "Contact Us", "Accessibility", "Work with us", "Advertise", "T Brand Studio", "Your Ad Choices", "Privacy Policy", "Terms of Service", "Terms of Sale", "Site Map", "Canada", "International", "Help", "Subscriptions"]
+  const listEndFooter = ["The New York Times Company", "NYTCo", "Contact Us", "Accessibility", "Work with us", "Advertise", "T Brand Studio", "Your Ad Choices", "Privacy Policy", "Terms of Service", "Terms of Sale",]
   const listSubscribeOne = ["Email Newsletters", "Corporate Subscriptions", "Education Rate"]
   const listSubscribeTwo = ["Mobile Applications", "Replica Edition", "International", "Canada", "Español", "中文网"]
   

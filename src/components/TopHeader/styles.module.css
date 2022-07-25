@@ -33,3 +33,19 @@
   display: flex;
   gap: 8px;
 }
+
+
+
+@media(max-width: 960px) {
+
+  .topHeaderContent {
+    justify-content: space-between
+  }
+
+  .topHeaderContent  > div:last-child, .topHeaderContent >div:first-child a {
+    display: none;
+  }
+  
+
+
+}

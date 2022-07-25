@@ -13,3 +13,16 @@
   object-fit: cover;
   cursor: pointer
 }
+
+
+@media(max-width: 960px) {
+
+  .noticeContent img {
+    height: 200px;
+  }
+
+  .noticeContent {
+    width: 100%
+  }
+
+}
